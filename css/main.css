@@ -160,16 +160,6 @@ input[type=text]::-ms-clear {
   font-size: 12px;
 }
 
-/* narrow screens */
-/* -------------- */
-
-@media all and (max-width: 600px) {
-  .typeahead-demo,
-  .links-examples {
-    display: none;
-  }
-}
-
 .Typeahead *,
 .Typeahead *:before,
 .Typeahead *:after {
@@ -266,6 +256,7 @@ input[type=text]::-ms-clear {
   z-index: 100;
   display: none;
   width: 95%;
+  margin-bottom: 20px;
   overflow: hidden;
   background-color: #fff;
   -webkit-border-radius: 8px;
@@ -279,6 +270,10 @@ input[type=text]::-ms-clear {
 
 .Typeahead-menu.is-open {
   display: block;
+}
+
+.Typeahead-selectable {
+  cursor: pointer;
 }
 
 .Typeahead-selectable + .Typeahead-selectable {
